@@ -21,3 +21,7 @@ before_install:
 
 install:
   - docker-compose -f deployment/docker/docker-compose-build.yaml build --parallel
+  - docker push nishantt95/rest-user
+  - docker push nishantt95/rest-feed
+  - docker push nishantt95/reverse-proxy
+  - docker push nishantt95/frontend
