@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    service: reverseproxy
+    version: v1
+  name: reverseproxy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        service: reverseproxy
+        version: v1
+    spec:
+      containers:
+        - image: nishantt95/reverse-proxy
+          name: reverseproxy
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "74Mi"
+              cpu: "250m"
+            limits:
+              memory: "1024Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
