@@ -73,3 +73,8 @@ All the pods running inside kubernetes (AWS Elastic Kubernetes Service)
 ![Alt text](/screenshots/travis-ci-1.PNG?raw=true)
 
 ![Alt text](/screenshots/travis-ci-2.PNG?raw=true)
+
+
+#### Running docker on local system
+
+![Alt text](/screenshots/running-docker-local.PNG?raw=true)
