@@ -6,13 +6,13 @@ services:
     image: nishantt95/reverse-proxy 
   backend_user:
     build:
-      context: ../../udacity-c3-restapi-user
+      context: ../../user-service
     image: nishantt95/rest-user
   backend_feed:
     build:
-      context: ../../udacity-c3-restapi-feed  
+      context: ../../feed-service
     image: nishantt95/rest-feed
   frontend:
     build:
-      context: ../../udacity-c3-frontend  
+      context: ../../frontend
     image: nishantt95/frontend
